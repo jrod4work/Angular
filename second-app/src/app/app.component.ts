@@ -13,5 +13,4 @@ export class AppComponent {
   }
   arr = ["test",  "test1"]
 
-  isTrue = true;
 }
