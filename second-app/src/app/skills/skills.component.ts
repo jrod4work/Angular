@@ -2,32 +2,22 @@ import { Component, OnInit } from '@angular/core';
 import { Skill } from '../models/skill';
 import { Levl } from '../types/levl.enum';
 
+import { SkillsService } from '../services/skills.service';
+
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  skills: Skill[] = [
-    {
-      id: 0,
-      name: 'Angular',
-      level: Levl.Beginner
-    },
-    {
-      id: 1,
-      name: 'CSS',
-      level: Levl.Beginner
-    },
-    {
-      id: 2,
-      name: 'HTML',
-      level: Levl.Beginner
-    }
-  ];
-  constructor() { }
+  skills: Skill[];
+  dataService: SkillsService;
 
-  ngOnInit() {
+  constructor(private skillsService: SkillsService) {
+    this.dataService = this.skillsService;
   }
 
+  ngOnInit() {
+    this.skills = this.dataService.skills;
+  }
 }
