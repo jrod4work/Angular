@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test';
+  title = 'TEST';
+  obj = {
+    city: 'Boulder',
+    AboutMe: 'I like learning and being a perfectionist'
+  }
+  arr = ["test",  "test1"]
+
+  isTrue = true;
 }

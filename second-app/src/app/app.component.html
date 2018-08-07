@@ -1,8 +1,22 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div id="header" style="text-align:center">
+<div id="header">
   <h1>
     {{ title }}
+    
   </h1>
-  <img width="400" alt="Angular Logo" src="../assets/images/jacob-kiesow-342238-unsplash.jpg">
-  <p>Photo by Jacob Kiesow on Unsplash </p>
+  <img alt="Angular Logo" src="../assets/images/jacob-kiesow-342238-unsplash.jpg">
+  <p id="credit">Photo by Jacob Kiesow on Unsplash </p>
+<div class="para">
+  <p>City: {{obj.city}}</p>
+
+<p>About Me: {{obj.AboutMe}}</p>
 </div>
+
+<ul>
+  <li *ngFor = "let i of arr">{{i}}</li>
+</ul>
+
+<p *ngIf = "isTrue">Hello</p>
+
+</div>
+
