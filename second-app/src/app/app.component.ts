@@ -11,6 +11,6 @@ export class AppComponent {
     city: 'Boulder',
     AboutMe: 'I like learning and being a perfectionist'
   }
-  arr = ["test",  "test1"]
+  arr = ["testing arrays",  "testing arrays 1"]
 
 }
