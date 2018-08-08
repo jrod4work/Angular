@@ -16,9 +16,10 @@ export class ContactsComponent implements OnInit {
   constructor(private Contacts2Service: Contacts2Service) {this.dataService = this.Contacts2Service }
   
 
-  ngOnInit() {
-    this.contact4 = this.dataService.contact4;
+  ngOnInit(): void {
+    this.dataService.getContacts5().subscribe(contact4 => this.contact4 = contact4);
   }
+
 }
 
 

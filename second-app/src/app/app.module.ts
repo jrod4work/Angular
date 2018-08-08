@@ -13,6 +13,7 @@ import { Contacts2Service } from './services/contacts2.service';
 import { ContactsComponent } from './contacts/contacts.component';
 import { GreetingComponent } from './greeting/greeting.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { AddContactsComponent } from './add-contacts/add-contacts.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     SkillsComponent,
     ContactsComponent,
     GreetingComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    AddContactsComponent
   ],
   imports: [
     BrowserModule, FormsModule

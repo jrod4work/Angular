@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Contacts3 } from '../models/contact';
+import { Observable, of } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -28,5 +30,8 @@ export class Contacts2Service {
       email: 'jrod@woz.com3'
     }
   ];
-  constructor() { }
+  getContacts5 = (): Observable<Contacts3[]> => {
+    return of(this.contact4);
+};
+
 }
