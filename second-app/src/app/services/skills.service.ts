@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 
-import { Skill } from '../models/skill';
+import { Skill2class } from '../models/skill';
 import { Levl } from '../types/levl.enum';
 
 @Injectable({
     providedIn: 'root'
 })
 export class SkillsService {
-    skills: Skill[] = [
+    skills: Skill2class[] = [
       {
         id: 0,
         name: 'Angular',

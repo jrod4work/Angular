@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Contacts } from '../models/contact';
+import { Contacts3 } from '../models/contact';
+
+import { Contacts2Service } from '../services/contacts2.service';
+
 
 @Component({
   selector: 'app-contacts',
@@ -7,29 +10,15 @@ import { Contacts } from '../models/contact';
   styleUrls: ['./contacts.component.css']
 })
 export class ContactsComponent implements OnInit {
-    contact: Contacts [] = [
-      {
-        firstName: 'jrod',
-        lastName: 'the second',
-        phoneNumber: 123,
-        email: 'jrod@woz.com'
-      },
-      {
-        firstName: 'jrod2',
-        lastName: 'the second2',
-        phoneNumber: 1232,
-        email: 'jrod@woz.com2'
-      },
-      {
-        firstName: 'jrod3',
-        lastName: 'the second3',
-        phoneNumber: 12323,
-        email: 'jrod@woz.com3'
-      }
-    ];
-  constructor() { }
+  contact4: Contacts3 [];
+  dataService: Contacts2Service;
 
+  constructor(private Contacts2Service: Contacts2Service) {this.dataService = this.Contacts2Service }
+  
 
-  ngOnInit() {}
-
+  ngOnInit() {
+    this.contact4 = this.dataService.contact4;
+  }
 }
+
+

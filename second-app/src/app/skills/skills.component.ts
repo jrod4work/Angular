@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill } from '../models/skill';
+import { Skill2class } from '../models/skill';
 import { Levl } from '../types/levl.enum';
 
 import { SkillsService } from '../services/skills.service';
@@ -10,7 +10,8 @@ import { SkillsService } from '../services/skills.service';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  skills: Skill[];
+  skills: Skill2class[];
+  // second one is the model
   dataService: SkillsService;
 
   constructor(private skillsService: SkillsService) {
