@@ -10,13 +10,15 @@ import { Contacts2Service } from './services/contacts2.service';
 
 
 import { ContactsComponent } from './contacts/contacts.component';
+import { GreetingComponent } from './greeting/greeting.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SkillsComponent,
-    ContactsComponent
+    ContactsComponent,
+    GreetingComponent
   ],
   imports: [
     BrowserModule
