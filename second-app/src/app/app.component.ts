@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'TEST';
   obj = {
     city: 'Boulder',
-    AboutMe: 'I like learning and being a perfectionist'
+    AboutMe: 'I like organizing ma house'
   }
   arr = ["testing arrays",  "testing arrays 1"]
 

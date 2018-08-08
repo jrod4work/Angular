@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { Message } from '../models/message';
 
 @Component({
-  selector: 'app-contact-form',
-  templateUrl: './contact-form.component.html',
-  styleUrls: ['./contact-form.component.css']
+    selector: 'app-contact-form',
+    templateUrl: './contact-form.component.html',
+    styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent implements OnInit {
+    model: Message = new Message();
 
-  constructor() { }
+    constructor() {}
 
-  ngOnInit() {
-  }
+    ngOnInit() {}
 
+    onSubmit() {
+        console.log('Submit Successful: ', this.model);
+    }
 }
