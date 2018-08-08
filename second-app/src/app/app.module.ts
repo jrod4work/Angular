@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { SkillsComponent } from './skills/skills.component';
 
 import { SkillsService } from './services/skills.service';
+import { ContactsComponent } from './contacts/contacts.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule
