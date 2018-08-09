@@ -12,16 +12,28 @@ import { Movie } from '../../../models/movie';
 export class DisplayMoviesComponent implements OnInit {
 	private moviesRoute = 'http://localhost:3000/movies';
 	public movies: Movie[];
-
+  
 	constructor(private http: HttpClient) {}
-
-	getMovies() {
-		this.http.get<Movie[]>(this.moviesRoute).subscribe(movies => {
-			this.movies = movies;
-			console.log('Movies', this.movies);
-		});
-	}
+  
 	ngOnInit() {
-		this.getMovies();
+	  this.getMovies();
 	}
-}
+  
+	getMovies() {
+	  this.http.get<Movie[]>(this.moviesRoute).subscribe(movies => {
+		this.movies = movies;
+		console.log('Movies', this.movies);
+	  });
+	}
+  
+	onMovieDeleted(movieId) {
+	  let movieIndex = 0;
+	  for(let movie of this.movies) {
+		if(movie.id === movieId) {
+		  this.movies.splice(movieIndex, 1);
+		  break;
+		}
+		movieIndex++;
+	  }
+	}
+  }

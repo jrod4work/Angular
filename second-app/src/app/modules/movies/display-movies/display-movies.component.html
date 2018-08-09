@@ -3,6 +3,7 @@
     Movies:
   </h2>
   <app-display-movie *ngFor="let movie of movies"
-    [movie]="movie">
+    [movie]="movie"
+    (movieDeleted)="onMovieDeleted($event)">
   </app-display-movie>
 </div>
