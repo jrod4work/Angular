@@ -1,21 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div id="header">
-    <nav>
-        <a class="btn" routerLink="add-contacts" routerLinkActive="active">Add Contact</a>
-        <a class="btn" routerLink="greeting" routerLinkActive="active">Home</a>
-        <a class="btn" routerLink="skills" routerLinkActive="active">Skills</a>
-        <a class="btn" routerLink="contact-form" routerLinkActive="active">Contact Form</a>
-        <a class="btn" routerLink="list-contacts" routerLinkActive="active">List of Contacts</a>
-
-      </nav>
-      <router-outlet></router-outlet>
   <h1>
     {{ title }}
+    
   </h1>
-
   <img alt="Angular Logo" src="../assets/images/jacob-kiesow-342238-unsplash.jpg">
   <p id="credit">Photo by Jacob Kiesow on Unsplash </p>
-  
   
 
 
@@ -34,8 +24,6 @@
 <app-add-contacts></app-add-contacts>
 <app-contacts></app-contacts>
 <app-greeting></app-greeting>
-
-
 </div>
 
 <app-contact-form></app-contact-form>

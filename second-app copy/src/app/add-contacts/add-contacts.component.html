@@ -1,0 +1,29 @@
+<!-- // id: number;
+// firstName: string;
+// lastName: string;
+// phoneNumber: number;
+// email: string; -->
+
+
+
+<form (ngSubmit)="onSubmit()">
+    <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" placeholder="firstName" name="firstName" required [(ngModel)]="model.firstName">
+    </div>
+    <div>
+        <label for="lastName">Last Name:</label>
+        <input type="lastName" placeholder="lastName" name="lastName" required [(ngModel)]="model.lastName">
+    </div>
+    <div>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="number" placeholder="phoneNumber" name="phoneNumber" required [(ngModel)]="model.phoneNumber">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="text" placeholder="email" name="email" email required [(ngModel)]="model.email">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>

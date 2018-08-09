@@ -4,33 +4,29 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-
+import { SkillsComponent } from './skills/skills.component';
 
 import { SkillsService } from './services/skills.service';
 import { Contacts2Service } from './services/contacts2.service';
 
 
-
+import { ContactsComponent } from './contacts/contacts.component';
 import { GreetingComponent } from './greeting/greeting.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { AddContactsComponent } from './add-contacts/add-contacts.component';
 
 
-
-
-import { SkillsModule } from './modules/skills/skills.module';
-import { ContactsModule } from './modules/contacts/contacts.module';
-import { AppRoutingModule } from './/app-routing.module';
-
 @NgModule({
   declarations: [
     AppComponent,
+    SkillsComponent,
+    ContactsComponent,
     GreetingComponent,
     ContactFormComponent,
     AddContactsComponent
   ],
   imports: [
-    BrowserModule, FormsModule, SkillsModule, ContactsModule, AppRoutingModule
+    BrowserModule, FormsModule
   ],
   providers: [SkillsService],
   bootstrap: [AppComponent]
