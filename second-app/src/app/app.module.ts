@@ -22,6 +22,10 @@ import { SkillsModule } from './modules/skills/skills.module';
 import { ContactsModule } from './modules/contacts/contacts.module';
 import { AppRoutingModule } from './/app-routing.module';
 
+import { MoviesModule } from './modules/movies/movies.module';
+import { MusicModule } from './modules/music/music.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +34,7 @@ import { AppRoutingModule } from './/app-routing.module';
     AddContactsComponent
   ],
   imports: [
-    BrowserModule, FormsModule, SkillsModule, ContactsModule, AppRoutingModule
+    BrowserModule, FormsModule, SkillsModule, ContactsModule, AppRoutingModule, MoviesModule, MusicModule
   ],
   providers: [SkillsService],
   bootstrap: [AppComponent]

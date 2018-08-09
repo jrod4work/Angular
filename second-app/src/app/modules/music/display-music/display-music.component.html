@@ -1,0 +1,15 @@
+<div class="music">
+  <h2>
+    Music:
+  </h2>
+  <ul>
+    <li *ngFor="let Music of music">
+      <p>{{Music.id + 1}}. {{Music.title}}: {{Music.director}}</p>
+      <!-- <img [src]='Music.url' /> -->
+      <!-- <video [src]='Music.url' frameborder="0" allowfullscreen></video> -->
+      <video width="320" height="240" controls>
+        <source src="Music.url" type="video/mp4">
+    </video>
+    </li>
+  </ul>
+</div>
